@@ -5,6 +5,7 @@ import { Text, clx } from "@medusajs/ui"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import MedusaCTA from "@modules/layout/components/medusa-cta"
 import Image from "next/image";
+import {FaFacebook, FaInstagram, FaTwitter} from "react-icons/fa";
 
 export default async function Footer() {
   const { collections } = await listCollections({
@@ -152,6 +153,18 @@ export default async function Footer() {
             © {new Date().getFullYear()} Woven. All rights reserved.
           </Text>
           {/*<MedusaCTA />*/}
+          {/* Social Media Links */}
+          <div className="flex gap-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-ui-fg-muted hover:text-ui-fg-base">
+              <FaFacebook size={24} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-ui-fg-muted hover:text-ui-fg-base">
+              <FaInstagram size={24} />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-ui-fg-muted hover:text-ui-fg-base">
+              <FaTwitter size={24} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
