@@ -11,9 +11,12 @@ import { HttpTypes } from "@medusajs/types"
 
 const SideMenuItems = {
   Home: "/",
-  Store: "/store",
-  Account: "/account",
-  Cart: "/cart",
+  // Store: "/store",
+  // Account: "/account",
+  // Cart: "/cart",
+  About: "/about",
+  FAQs: "/faqs",
+  // "Stole Customizer": "/stole-customizer",
 }
 
 const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {

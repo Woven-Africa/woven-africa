@@ -9,6 +9,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/modules/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@medusajs/ui/dist/**/*.{js,jsx,ts,tsx}",
+    "./modules/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -60,6 +61,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
+          "var(--font-ubuntu)", // Set Ubuntu as the default sans-serif font
           "Inter",
           "-apple-system",
           "BlinkMacSystemFont",

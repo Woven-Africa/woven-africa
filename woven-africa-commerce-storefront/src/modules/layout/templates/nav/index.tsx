@@ -5,6 +5,7 @@ import { StoreRegion } from "@medusajs/types"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import Image from "next/image";
 
 export default async function Nav() {
   const regions = await listRegions().then((regions: StoreRegion[]) => regions)
@@ -25,33 +26,56 @@ export default async function Nav() {
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
               data-testid="nav-store-link"
             >
-              Medusa Store
+              <Image src="/logo.png" alt="logo" width={50} height={50} />
             </LocalizedClientLink>
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
+              {/*<LocalizedClientLink*/}
+              {/*  className="hover:text-ui-fg-base"*/}
+              {/*  href="/account"*/}
+              {/*  data-testid="nav-account-link"*/}
+              {/*>*/}
+              {/*  Account*/}
+              {/*</LocalizedClientLink>*/}
               <LocalizedClientLink
                 className="hover:text-ui-fg-base"
-                href="/account"
+                href="/about"
                 data-testid="nav-account-link"
               >
-                Account
+                About
+              </LocalizedClientLink>
+
+              <LocalizedClientLink
+                  className="hover:text-ui-fg-base"
+                  href="/faqs"
+                  data-testid="nav-account-link"
+              >
+                FAQs
+              </LocalizedClientLink>
+
+              <LocalizedClientLink
+                  className="hover:text-ui-fg-base"
+                  href="/stole-customizer"
+                  data-testid="nav-account-link"
+              >
+                Stole Customizer
               </LocalizedClientLink>
             </div>
-            <Suspense
-              fallback={
-                <LocalizedClientLink
-                  className="hover:text-ui-fg-base flex gap-2"
-                  href="/cart"
-                  data-testid="nav-cart-link"
-                >
-                  Cart (0)
-                </LocalizedClientLink>
-              }
-            >
-              <CartButton />
-            </Suspense>
+            {/*<Suspense*/}
+            {/*  fallback={*/}
+            {/*    <LocalizedClientLink*/}
+            {/*      className="hover:text-ui-fg-base flex gap-2"*/}
+            {/*      href="/cart"*/}
+            {/*      data-testid="nav-cart-link"*/}
+            {/*    >*/}
+            {/*      Cart (0)*/}
+            {/*    </LocalizedClientLink>*/}
+            {/*  }*/}
+            {/*>*/}
+            {/*  <CartButton />*/}
+            {/*</Suspense>*/}
           </div>
         </nav>
       </header>
