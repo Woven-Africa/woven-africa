@@ -39,13 +39,13 @@ export default async function Nav() {
               {/*>*/}
               {/*  Account*/}
               {/*</LocalizedClientLink>*/}
-              <LocalizedClientLink
-                className="hover:text-ui-fg-base"
-                href="/about"
-                data-testid="nav-account-link"
-              >
-                About
-              </LocalizedClientLink>
+              {/*<LocalizedClientLink*/}
+              {/*  className="hover:text-ui-fg-base"*/}
+              {/*  href="/about"*/}
+              {/*  data-testid="nav-account-link"*/}
+              {/*>*/}
+              {/*  About*/}
+              {/*</LocalizedClientLink>*/}
 
               <LocalizedClientLink
                   className="hover:text-ui-fg-base"

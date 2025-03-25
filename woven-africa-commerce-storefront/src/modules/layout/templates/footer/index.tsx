@@ -6,6 +6,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import MedusaCTA from "@modules/layout/components/medusa-cta"
 import Image from "next/image";
 import {FaFacebook, FaInstagram, FaTwitter} from "react-icons/fa";
+import Partners from "@modules/partners/components/partners";
 
 export default async function Footer() {
   const { collections } = await listCollections({
@@ -16,7 +17,7 @@ export default async function Footer() {
   return (
     <footer className="border-t border-ui-border-base w-full">
       <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between pb-40 pt-10">
           <div>
             <LocalizedClientLink
               href="/"
@@ -25,6 +26,10 @@ export default async function Footer() {
               <Image src="/logo.png" alt="logo" width={50} height={50} />
 
             </LocalizedClientLink>
+
+           <Partners />
+
+
           </div>
           {/*<div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">*/}
           {/*  {productCategories && productCategories?.length > 0 && (*/}

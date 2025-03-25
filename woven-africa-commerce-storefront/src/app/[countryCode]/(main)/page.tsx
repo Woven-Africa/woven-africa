@@ -34,9 +34,9 @@ export default async function Home(props: {
     <>
       <Hero />
       <section className="container mx-auto flex flex-1 gap-24 py-24 justify-center items-center text-center">
-        <Image src="/images/hero_img_1.jpeg" alt="image of girl" width={400} height={400} />
+        <Image src="/images/hero_img_2.jpeg" alt="image of girl" width={400} height={400} />
         <div className="flex flex-col items-center text-center justify-center">
-          <h2 className="text-2xl font-bold mb-8">Celebrate Heritage, Embrace Excellence</h2>
+          <h2 className="text-2xl font-bold mb-8">Weaving Heritage Into Life</h2>
           <p className="max-w-lg text-base/8">
             Welcome to Woven, your premier destination for authentic Kente stoles that honor tradition and symbolize achievement.
             Whether you're celebrating a graduation, milestone, or cultural pride, our handwoven stoles blend artistry with meaning.
