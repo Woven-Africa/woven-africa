@@ -21,11 +21,8 @@ export default function MaintenancePage() {
                 <div className="mt-6">
                     <span className="inline-block text-sm text-gray-500">Stay updated:</span>
                     <div className="flex justify-center gap-3 mt-3">
-                        <a href="#" className="text-blue-600 hover:underline text-sm">
-                            Follow us on Twitter
-                        </a>
-                        <a href="#" className="text-blue-600 hover:underline text-sm">
-                            Subscribe to Updates
+                        <a href="/" className="text-blue-600 hover:underline text-sm">
+                            Go To Homepage
                         </a>
                     </div>
                 </div>
