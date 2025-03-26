@@ -130,7 +130,7 @@ export default async function Home(props: {
         {/* Second Section */}
         <section className="container mx-auto flex flex-wrap-reverse md:flex-nowrap gap-12 py-16 px-4 sm:px-8 lg:px-24 justify-center items-center text-center md:text-left">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6">Customize Your Own Stole</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">Customize Your Own Stole!</h2>
             <p className="max-w-xs sm:max-w-md md:max-w-lg text-base leading-relaxed">
               Design your own vibrant stole with our state-of-the-art customizer, perfect for celebrating graduations, milestones, and cultural achievements.
               Choose colors, patterns, and personal touches to create a one-of-a-kind piece that reflects your journey.
@@ -150,12 +150,12 @@ export default async function Home(props: {
         </section>
 
         {/* Featured Products Section */}
-        {/*<section className="py-12 px-4 sm:px-8 lg:px-24">*/}
-        {/*  <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">Featured Products</h2>*/}
-        {/*  <ul className="flex flex-wrap justify-center gap-6">*/}
-        {/*    <FeaturedProducts collections={collections} region={region} />*/}
-        {/*  </ul>*/}
-        {/*</section>*/}
+        <section className="py-12 px-4 sm:px-8 lg:px-24">
+          {/*<h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">Featured Products</h2>*/}
+          {/*<ul className="flex flex-wrap justify-center gap-6">*/}
+          {/*  <FeaturedProducts collections={collections} region={region} />*/}
+          {/*</ul>*/}
+        </section>
       </>
   )
 }

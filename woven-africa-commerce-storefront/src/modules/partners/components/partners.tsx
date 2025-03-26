@@ -1,7 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
 
 const partners = [
     "/images/partners/gta.png",
@@ -13,29 +13,39 @@ const partners = [
 
 const Partners = () => {
     return (
-        <div className="py-8 flex justify-center items-center overflow-hidden relative">
-            <motion.div
-                className="flex items-center gap-10 whitespace-nowrap"
-                animate={{ x: ["0%", "-100%"] }}
-                transition={{
-                    repeat: Infinity,
-                    duration: 15,
-                    ease: "linear",
-                }}
-                style={{ display: "flex", width: "max-content" }}
-            >
-                {[...partners, ...partners].map((src, index) => (
-                    <div key={index} className="flex-shrink-0">
-                        <Image
-                            src={src}
-                            alt="logo"
-                            width={200}
-                            height={200}
-                            className="filter grayscale transition duration-500 hover:grayscale-0"
-                        />
-                    </div>
-                ))}
-            </motion.div>
+        <div className="relative w-full overflow-hidden bg-white py-6 hidden md:block">
+            {/* Outer container that ensures no overflow */}
+            <div className="mx-auto w-full max-w-6xl overflow-hidden px-4">
+                {/* Scrolling section */}
+                <motion.div
+                    className="flex items-center gap-6 whitespace-nowrap"
+                    animate={{ x: ["0%", "-100%"] }}
+                    transition={{
+                        repeat: Infinity,
+                        duration: 15,
+                        ease: "linear",
+                    }}
+                    style={{
+                        width: "max-content",
+                        display: "flex",
+                    }}
+                >
+                    {[...partners, ...partners].map((src, index) => (
+                        <div
+                            key={index}
+                            className="flex-shrink-0 flex items-center justify-center mx-3"
+                        >
+                            <Image
+                                src={src}
+                                alt="logo"
+                                width={100}
+                                height={100}
+                                className="grayscale transition duration-500 hover:grayscale-0 max-w-[80px] sm:max-w-[100px] md:max-w-[120px]"
+                            />
+                        </div>
+                    ))}
+                </motion.div>
+            </div>
         </div>
     );
 };
