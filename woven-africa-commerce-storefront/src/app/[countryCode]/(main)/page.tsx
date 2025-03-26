@@ -132,9 +132,9 @@ export default async function Home(props: {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6">Customize Your Own Stole</h2>
             <p className="max-w-xs sm:max-w-md md:max-w-lg text-base leading-relaxed">
-              Design your own vibrant stole with our state-of-the-art customizer, perfect for celebrating graduations, milestones, and cultural achievements.
-              Choose colors, patterns, and personal touches to create a one-of-a-kind piece that reflects your journey.
-              Crown your special moment in style.
+              {/*Design your own vibrant stole with our state-of-the-art customizer, perfect for celebrating graduations, milestones, and cultural achievements.*/}
+              {/*Choose colors, patterns, and personal touches to create a one-of-a-kind piece that reflects your journey.*/}
+              {/*Crown your special moment in style.*/}
             </p>
             <div className="flex justify-center md:justify-start mt-6">
               <CustomButton text="Get Started" bgColor="bg-black" textColor="text-white" href="/stole-customizer" />
