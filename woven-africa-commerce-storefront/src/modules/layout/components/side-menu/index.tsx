@@ -15,7 +15,7 @@ const SideMenuItems = {
   // Store: "/store",
   // Account: "/account",
   // Cart: "/cart",
-  // About: "/about",
+  About: "/about",
   // "Stole Customizer": "/stole-customizer",
 }
 
