@@ -54,7 +54,7 @@ const Hero = () => {
                                 AUTHENTICALLY AFRICAN
                             </h1>
                             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mt-2">
-                                Celebrating culture, craftsmanship, and heritage through fashion.
+                                Weaving heritage into life
                             </p>
                         </motion.div>
                     )}

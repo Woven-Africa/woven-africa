@@ -116,12 +116,11 @@ export default async function Home(props: {
               className="w-full sm:w-80 md:w-96 h-auto rounded-lg shadow-lg"
           />
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6">Weaving Heritage Into Life</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">A Bit About WovenAfrica</h2>
             <p className="max-w-xs sm:max-w-md md:max-w-lg text-base leading-relaxed">
-              Welcome to Woven, your premier destination for authentic Kente stoles that honor tradition and symbolize achievement.
-              Whether you're celebrating a graduation, milestone, or cultural pride, our handwoven stoles blend artistry with meaning.
-              Explore our collection and wear your story with distinction.
+                At WovenAfrica, we are more than just a textile company—we are custodians of a rich heritage. As a three-generation family enterprise, our journey has been one of resilience, craftsmanship, and innovation. Much like the intricate weave of Kente, our story is one of growth, adaptation, and perseverance. We have faced challenges, including fires that threatened to erase our legacy, but each obstacle has only strengthened our resolve.
             </p>
+              <a href="/about" className="mt-4 text-blue-500">Read More</a>
           </div>
         </section>
 
