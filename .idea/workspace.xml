@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="685697ac-a00f-4e42-a86d-dde9d552b993" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/woven-africa-commerce-storefront/woven-africa-commerce-storefront/src/modules/home/components/hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/woven-africa-commerce-storefront/woven-africa-commerce-storefront/src/modules/home/components/hero/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="685697ac-a00f-4e42-a86d-dde9d552b993" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/woven-africa-commerce-storefront" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -35,24 +40,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/oheneba/Documents/Work/woven-africa/woven-africa-commerce-storefront/public/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/oheneba/Documents/Work/woven-africa/woven-africa-commerce-storefront/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oheneba/Documents/Work/woven-africa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/oheneba/Documents/Work/woven-africa/woven-africa-commerce-storefront/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/oheneba/Documents/Work/woven-africa/woven-africa-commerce-storefront/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/woven-africa-commerce-storefront/public/images/partners" />
       <recent name="$PROJECT_DIR$/woven-africa-commerce-storefront/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -77,6 +85,10 @@
       <workItem from="1742481139187" duration="3191000" />
       <workItem from="1742555857478" duration="3205000" />
       <workItem from="1742665011927" duration="10325000" />
+      <workItem from="1742757538705" duration="30743000" />
+      <workItem from="1742993262969" duration="897000" />
+      <workItem from="1742994963771" duration="7970000" />
+      <workItem from="1743082601624" duration="2326000" />
     </task>
     <servers />
   </component>

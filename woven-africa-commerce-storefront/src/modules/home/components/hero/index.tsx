@@ -54,7 +54,7 @@ const Hero = () => {
                                 AUTHENTICALLY AFRICAN
                             </h1>
                             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mt-2">
-                                Celebrating culture, craftsmanship, and heritage through fashion.
+                                Celebrating culture, craftsmanship, and heritage through fashion
                             </p>
                         </motion.div>
                     )}
@@ -62,7 +62,7 @@ const Hero = () => {
 
                 {/* Glowing Button with Floating Effect */}
                 <motion.a
-                    href="/shop"
+                    href="/stole-customizer"
                     className="px-6 py-3 bg-white text-black text-lg font-semibold rounded-full shadow-lg hover:bg-gray-200 transition relative"
                     animate={{
                         scale: [1, 1.05, 1], // Subtle pulse effect
