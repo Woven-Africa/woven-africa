@@ -22,7 +22,7 @@ const Partners = () => {
                     duration: 15,
                     ease: "linear",
                 }}
-                style={{ display: "flex", width: "max-content" }}
+                style={{ display: "flex"}}
             >
                 {[...partners, ...partners].map((src, index) => (
                     <div key={index} className="flex-shrink-0">
