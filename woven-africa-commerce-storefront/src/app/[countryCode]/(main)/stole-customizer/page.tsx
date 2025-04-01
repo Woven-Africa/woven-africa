@@ -12,7 +12,7 @@ const StoleCustomizer = () => {
   const [textColor, setTextColor] = useState("#000000");
   const [bgColor, setBgColor] = useState("#FBFBFB");
   const [stoleColor, setStoleColor] = useState("#FFFFFF"); 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState("");
   
   const sampleStoles = [
     "/images/stoles/transparent/1.png",
@@ -23,7 +23,7 @@ const StoleCustomizer = () => {
     "/images/stoles/transparent/6.png",
     "/images/stoles/transparent/7.png",
     "/images/stoles/transparent/8.png",
-    "/images/stoles/transparent/9.png", "/images/stoles/transparent/9.png",  "/images/stoles/transparent/9.png", "/images/stoles/transparent/9.png", "/images/stoles/transparent/9.png", "/images/stoles/transparent/9.png"
+    "/images/stoles/transparent/9.png"
   ];
 
   return (
@@ -83,7 +83,7 @@ const StoleCustomizer = () => {
             {selectedImage && (
                 <button
                   className="border p-2 rounded-md text-sm bg-red-500 text-white"
-                  onClick={() => setSelectedImage(null)}
+                  onClick={() => setSelectedImage("")}
                 >
                   Reset to SVG
                 </button>
@@ -94,7 +94,7 @@ const StoleCustomizer = () => {
             onClick={() => {
               setBgColor("#FBFBFB");
               setStoleColor("#FFFFFF");
-              setSelectedImage(null);
+              setSelectedImage("");
               setText("Graduation");
               setTextColor("#000000");
             }}
