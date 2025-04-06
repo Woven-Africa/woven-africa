@@ -1,0 +1,14 @@
+[
+    { "id": 100, "type": "rect", "label": "Rectangle" },
+    { "id": 150, "type": "square", "label": "Square" },
+    { "id": 200, "type": "circle", "label": "Circle" },
+    { "id": 300, "type": "ellipse", "label": "Ellipse" },
+    { "id": 400, "type": "pentagon", "label": "Pentagon" },
+    { "id": 500, "type": "hexagon", "label": "Hexagon" },
+    { "id": 600, "type": "star", "label": "Star" },
+    { "id": 700, "type": "diamond", "label": "Diamond" },
+    { "id": 800, "type": "triangle", "label": "Triangle" },
+    { "id": 900, "type": "trapezoid", "label": "Trapezoid" },
+    { "id": 1000, "type": "parallelogram", "label": "Parallelogram" },
+    { "id": 1100, "type": "line", "label": "Line" }
+]
