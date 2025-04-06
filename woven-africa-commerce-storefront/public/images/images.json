@@ -1,5 +1,5 @@
 {
-    "background": [
+    "stole": [
         "/images/stoles/bare/stole1.svg",
         "/images/stoles/bare/stole2.svg",
         "/images/stoles/bare/stole3.svg",
@@ -12,20 +12,41 @@
     ],
       
     "symbol": [
-        "/images/symbols/asset15.svg",
-        "/images/symbols/friendship.svg",
-        "/images/symbols/heroism.svg",
-        "/images/symbols/leadership.svg",
-        "/images/symbols/love.svg",
-        "/images/symbols/prosperity.svg",
-        "/images/symbols/quality.svg",
-        "/images/symbols/royalty.svg",
-        "/images/symbols/standards.svg",
-        "/images/symbols/wisdom.svg"
-    ],
-    
-    "shape":[
-        "/images/symbols/asset15.svg"
+        "/images/symbols/Aban.svg",
+        "/images/symbols/Abe_Dua.svg",
+        "/images/symbols/Agyindawuru.svg",
+        "/images/symbols/Akoben.svg",
+        "/images/symbols/Akoma_Ntoso.svg",
+        "/images/symbols/Akoma.svg",
+        "/images/symbols/Ananse.svg",
+        "/images/symbols/Ani_Bere.svg",
+        "/images/symbols/Aya.svg",
+        "/images/symbols/Dame_Dame.svg",
+        "/images/symbols/Fihankra.svg",
+        "/images/symbols/Hwe_Mu_Dua.svg",
+        "/images/symbols/Hye_won_hye.svg",
+        "/images/symbols/Kramo_Bone.svg",
+        "/images/symbols/Mpatapo.svg",
+        "/images/symbols/Mpuannum.svg",
+        "/images/symbols/Nkotimsefo.svg",
+        "/images/symbols/Nkyinkyim.svg",
+        "/images/symbols/Nyame_Ye.svg",
+        "/images/symbols/Nyame_Nti.svg",
+        "/images/symbols/Pempamsie.svg",
+        "/images/symbols/Sankofa.svg",
+        "/images/symbols/Sepow.svg",
+        "/images/symbols/Som_Onyankopon.svg",
+        "/images/symbols/Sunsum.svg",
+        "/images/symbols/UAC_Nkanea.svg",
+        "/images/symbols/Woforo.svg",
+        "/images/symbols/ashesi.svg",
+        "/images/symbols/pattern1.png",
+        "/images/symbols/pattern2.png",
+        "/images/symbols/pattern3.png",
+        "/images/symbols/pattern4.png",
+        "/images/symbols/pattern5.png",
+        "/images/symbols/pattern6.png",
+        "/images/symbols/pattern7.png"
     ],
     
     "flag": [
@@ -85,9 +106,5 @@
         "/images/flags/united-states-of-america.png",
         "/images/flags/uruguay.png",
         "/images/flags/zimbabwe.png"
-    ],
-    
-    "pattern":[
-    
     ]
 }

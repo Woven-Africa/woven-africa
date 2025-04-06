@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaPencilAlt, FaStar, FaUpload, FaPalette, FaShapes, FaFlag } from "react-icons/fa";
 
-const CustomizationPanel = ({setThirdSidebarContent, setSelectedImage}) => {
+const CustomizationPanel = ({setThirdSidebarContent, setClear}) => {
     const [selected, setSelected] = useState(null);
     
   
@@ -54,7 +54,7 @@ const CustomizationPanel = ({setThirdSidebarContent, setSelectedImage}) => {
         <CustomItem icon={<FaShapes />} text="SHAPE"  isSelected={selected === "shape"} onClick={() => handleSelect("shape")} />
         <CustomItem icon={<FaFlag />} text="FLAG"  isSelected={selected === "flag"} onClick={() => handleSelect("flag")} />
         <CustomItem icon={<FaUpload />} text="UPLOAD IMAGE"  isSelected={selected === "upload"} onClick={() => handleSelect("upload")} />
-        <button className="w-full p-2 bg-red-400 text-white rounded hover:bg-red-500">
+        <button className="w-full mt-4 p-2 bg-red-400 text-white rounded hover:bg-red-500" onClick={() => setClear(true)}>
           Clear Design
         </button>
       </div>
@@ -64,7 +64,7 @@ const CustomizationPanel = ({setThirdSidebarContent, setSelectedImage}) => {
   const CustomItem = ({ icon, text, isSelected, onClick }) => {
     return (
         <div
-        className={`flex items-center space-x-2 px-6 py-4 cursor-pointer transition-all ${
+        className={`flex items-center text-sm space-x-2 rounded px-6 py-4 cursor-pointer transition-all ${
           isSelected
             ? "bg-blue-100 border-l-4 border-blue-500 font-bold"
             : "hover:bg-gray-100"

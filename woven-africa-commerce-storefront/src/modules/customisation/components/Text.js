@@ -26,7 +26,7 @@ const Text = ({ text, onDelete }) => {
     <Draggable nodeRef={nodeRef}>
       <div
         ref={nodeRef}
-        className="absolute cursor-move"
+        className="absolute z-20 cursor-move"
         onClick={() => setIsEditing(true)}
         style={{
           fontSize: `${fontSize}px`,

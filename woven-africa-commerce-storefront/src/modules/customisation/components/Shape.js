@@ -25,6 +25,8 @@ export default function Shape({ shape, onDelete }) {
   const renderShape = () => {
     switch (shape.type) {
       case "rect":
+        return <div style={{ width: size*2, height: size, backgroundColor: color }} className="border border-black"></div>;
+      case "square":
         return <div style={{ width: size, height: size, backgroundColor: color }} className="border border-black"></div>;
       case "circle":
         return <div style={{ width: size, height: size, backgroundColor: color, borderRadius: "50%" }} className="border border-black"></div>;
@@ -101,7 +103,7 @@ export default function Shape({ shape, onDelete }) {
   
   return (
     <Draggable nodeRef={nodeRef}>
-      <div ref={nodeRef} className="absolute cursor-move" onClick={() => setIsSelected(true)}>
+      <div ref={nodeRef} className="absolute z-20 cursor-move" onClick={() => setIsSelected(true)}>
         {/* Shape based on type */}
         <div className="flex justify-center">
           {renderShape()}

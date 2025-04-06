@@ -1,5 +1,6 @@
 [
     { "id": 100, "type": "rect", "label": "Rectangle" },
+    { "id": 150, "type": "square", "label": "Square" },
     { "id": 200, "type": "circle", "label": "Circle" },
     { "id": 300, "type": "ellipse", "label": "Ellipse" },
     { "id": 400, "type": "pentagon", "label": "Pentagon" },

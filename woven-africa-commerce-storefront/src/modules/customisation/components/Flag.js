@@ -1,8 +1,8 @@
 import Draggable from "react-draggable";
 import { useState, useRef, useEffect } from "react";
 
-const Upload = ({ upload, onDelete }) => {
-    const [size, setSize] = useState(upload.size);
+const Flag = ({ flag, onDelete }) => {
+    const [size, setSize] = useState(flag.size);
     const [isEditing, setIsEditing] = useState(false);
 
     const nodeRef = useRef(null);
@@ -21,11 +21,11 @@ const Upload = ({ upload, onDelete }) => {
 
     return (
         <Draggable nodeRef={nodeRef}>
-            <div ref={nodeRef} className="absolute z-20 cursor-move" onClick={() => setIsEditing(true)}>
-                {/* Render Symbol */}
+            <div ref={nodeRef} className="absolute cursor-move z-20" onClick={() => setIsEditing(true)}>
+                {/* Render Flag */}
                 <img 
-                    src={upload.src} 
-                    alt="Symbol" 
+                    src={flag.src} 
+                    alt="Flag" 
                     width={size} 
                     height={size} 
                 />
@@ -51,4 +51,4 @@ const Upload = ({ upload, onDelete }) => {
     );
 };
 
-export default Upload;
+export default Flag;

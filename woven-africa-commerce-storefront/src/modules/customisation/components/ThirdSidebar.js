@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { SketchPicker } from "react-color";
 
 
-const ThirdSidebar = ({ content, setSelectedImage, setSelectedBGColor, selectedBGColor, setSelectedStoleColor, selectedStoleColor, setSelectedShape, setSelectedSymFlag, setUpload, setText }) => {
+const ThirdSidebar = ({ content, setSelectedImage, setSelectedBGColor, selectedBGColor, setSelectedStoleColor, selectedStoleColor, setSelectedShape, setSelectedSym, setSelectedFlag, setUpload, setText }) => {
   const [imageList, setImageList] = useState([]);
   const [shapesData, setShapeData] = useState([]);
   const [textInput, setTextInput] = useState(""); 
@@ -57,22 +57,49 @@ const ThirdSidebar = ({ content, setSelectedImage, setSelectedBGColor, selectedB
               />
             )
           ) : content.type === "images" ? (
-            content.option === "background" ? (
+            content.option === "stole" ? (
               // Background Images Grid
               <div className="grid grid-cols-2 gap-2">
                 {imageList.length > 0 && (
-                    imageList.map((img, index) => (
+                    imageList.map((img, index) => (   
                       <img
                         key={index}
                         src={img}
                         alt={`Option ${index}`}
                         className="cursor-pointer w-full h-auto"
-                        onClick={() => setSelectedImage(img)}
+                        onClick={() => setSelectedImage(img.split("/").pop().split(".")[0])}
                       />
                     ))
                   )
                 }
               </div>
+            ) : content.option === "symbol" ? (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 p-2 overflow-auto">
+                {imageList.length > 0 ? (
+                  imageList.map((img, index) => {
+                    // Extract filename from URL
+                    const imageName = img.split("/").pop().split(".")[0];
+          
+                    return (
+                      <div>
+                        <div key={index} className="bg-white shadow-md rounded-md p-3 overflow-hidden">
+                          <img
+                            key={index}
+                            src={img}
+                            alt={imageName}
+                            onClick={() => setSelectedSym(imageName)}
+                            className="w-full h-auto object-cover aspect-[3/3] cursor-pointer transition-transform duration-300 hover:scale-105"
+                          />
+                          {/* <p className="text-center text-gray-600 text-[10px] mt-2"></p> */}
+                        </div>
+                        <p className="text-center text-white text-[10px] mt-2">{imageName}</p>
+                      </div>
+                    );
+                  })
+                ) : (
+                  <p className="col-span-full text-gray-500">No images available.</p>
+                )}
+              </div>          
             ) : (
               // General Images Grid
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 p-2 overflow-auto">
@@ -88,7 +115,7 @@ const ThirdSidebar = ({ content, setSelectedImage, setSelectedBGColor, selectedB
                             key={index}
                             src={img}
                             alt={imageName}
-                            onClick={() => setSelectedSymFlag(img)}
+                            onClick={() => setSelectedFlag(img)}
                             className="w-full h-auto object-cover aspect-[3/3] cursor-pointer transition-transform duration-300 hover:scale-105"
                           />
                           <p className="text-center text-gray-600 text-[10px] mt-2"></p>

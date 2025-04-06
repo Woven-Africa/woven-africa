@@ -15,9 +15,11 @@ export default function Home() {
   const [selectedStoleColor, setSelectedStoleColor] = useState("#ffffff");
   const [selectedBGColor, setSelectedBGColor] = useState("#e5e7eb");
   const [selectedShape, setSelectedShape] = useState(null);
-  const [selectedSymFlag, setSelectedSymFlag] = useState(null);
+  const [selectedFlag, setSelectedFlag] = useState(null);
+  const [selectedSym, setSelectedSym] = useState(null);
   const [upload, setUpload] = useState(null);
   const [text, setText] = useState("");
+  const [clear, setClear] = useState(false);
   
   return (
     <div className="flex h-screen">
@@ -25,8 +27,8 @@ export default function Home() {
       <Sidebar setActivePanel={setActivePanel} setSelectedImage={setSelectedImage}/>
       
       {/* Second Sidebar */}
-      {activePanel === "custom" && <CustomizationPanel setThirdSidebarContent={setThirdSidebarContent} setSelectedImage={setSelectedImage}/>}
-      {activePanel === "preset" && <PresetDesignPanel setThirdSidebarContent={setThirdSidebarContent} />}
+      {activePanel === "custom" && <CustomizationPanel setThirdSidebarContent={setThirdSidebarContent} setClear={setClear}/>}
+      {activePanel === "preset" && <PresetDesignPanel setThirdSidebarContent={setThirdSidebarContent} setClear={setClear}/>}
       
       {/* Third Sidebar */}
       {thirdSidebarContent && (
@@ -38,7 +40,8 @@ export default function Home() {
             selectedStoleColor={selectedStoleColor} 
             setSelectedStoleColor={setSelectedStoleColor} 
             setSelectedShape={setSelectedShape} 
-            setSelectedSymFlag={setSelectedSymFlag} 
+            setSelectedFlag={setSelectedFlag} 
+            setSelectedSym={setSelectedSym} 
             setUpload={setUpload}
             setText={setText}
         />
@@ -52,11 +55,17 @@ export default function Home() {
             selectedBGColor={selectedBGColor} 
             activePanel={activePanel} 
             selectedStoleColor={selectedStoleColor} 
-            selectedShape={selectedShape} 
-            thirdSidebarContent={thirdSidebarContent} 
-            selectedSymFlag={selectedSymFlag} 
+            selectedShape={selectedShape}
+            selectedSym={selectedSym} 
+            selectedFlag={selectedFlag} 
             upload={upload}
             submittedText ={text}
+            clear={clear}
+            
+            setSelectedShape={setSelectedShape} 
+            setSelectedFlag={setSelectedFlag} 
+            setSelectedSym={setSelectedSym} 
+            setClear={setClear}
         />
       </div>
     </div>
